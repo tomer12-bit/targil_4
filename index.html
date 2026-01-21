@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HW4.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <form class="form" name="ContactForm" onsubmit="return validate();">
+             <h1 class="title">Colledge Admissions Calculator</h1>
+            <!-- שורה -->
+            <div class="row">
+                <label>age</label>
+                <input type="number" name="age">
+            </div>
+            <div class="row">
+                <fieldset class="field">
+                    <legend>Select from the below options:</legend>
+                    <input type="radio" name="zihui" id="PB">Psychometric and Bagrut</input>
+                    <input type="radio" name="zihui" id="MB">Mechina and Bagrut</input>
+                </fieldset>
+            </div>
+            <div class="row">
+                <label>Psychometric grade</label>
+                <input type="number" name="Psychometric">
+            </div>
+            <div class="row">
+                <label>Bagrut grade</label>
+                <input type="number" name="Bagrut">
+            </div>
+            <div class="row">
+                <label>Mechina grade</label>
+                <input type="number" name="Mechina">
+            </div>
+            <div class="row">
+                    <input type="submit" value="validate">
+            </div>
+            <div class="green" id="green"></div>
+
+
+        </form>
+    </div>
+    <script src="HW4.js">
+    </script>
+
+</body>
+</html>
